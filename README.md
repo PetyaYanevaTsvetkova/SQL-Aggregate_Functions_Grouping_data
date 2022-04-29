@@ -2,9 +2,10 @@
 SQL: Aggregate Functions and Grouping data
 
 ## Project Description:
-Theory:
-Aggregate Functions: COUNT, AVG, SUM, MAX, MIN
-Grouping data: GROUP BY, HAVING, GROUPING SETS
+	Theory:
+	Aggregate Functions: 
+	COUNT, AVG, SUM, MAX, MIN
+	Grouping data: GROUP BY, HAVING, GROUPING SETS
 
 Practical tasks:
 Create products_inventory table with PK which is autoincremented and the following structure (all fields are mandatory):
