@@ -1,14 +1,12 @@
 ## Project's Title:
-	SQL: Aggregate Functions and Grouping data
+SQL: Aggregate Functions and Grouping data
 
 ## Project Description:
-
-*Theory:
+Theory:
 Aggregate Functions: COUNT, AVG, SUM, MAX, MIN
 Grouping data: GROUP BY, HAVING, GROUPING SETS
 
-
-*Practical tasks:
+Practical tasks:
 Create products_inventory table with PK which is autoincremented and the following structure (all fields are mandatory):
 Product name
 Available quantity
@@ -31,7 +29,7 @@ Get the inventory amount for each warehouse
 Get all product categories stored by each warehouse
 Get the avarage product categories hold by the warehouses
 
-*Acceptance criteria:
+Acceptance criteria:
 As a QA Automation trainee, I want to gain knowledge of how to use aggregate functions and count data.
 
 ## Table of Contents:
