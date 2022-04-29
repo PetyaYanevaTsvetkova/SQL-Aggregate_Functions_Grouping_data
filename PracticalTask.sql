@@ -52,10 +52,9 @@ SELECT
 FROM 
 	product_inventory
 WHERE 
-	available_quantity = 0
+	is_product_in_stock = true
 GROUP BY 
 	product_name;
-
 
 --Get the average product price with VAT for all categories
 SELECT 
@@ -70,7 +69,7 @@ SELECT
 FROM 
 	product_inventory
 WHERE 
-	available_quantity <> 0;
+	available_quantity > 0;
 	
 	
 --Find the most and least expensive item from the table
@@ -138,7 +137,7 @@ HAVING
 	COUNT(product_name) > 3;
 	
 	
---Get the inventory amount for each warehouse
+--Get the inventory count for each warehouse 
 SELECT 
 	SUM(available_quantity), warehouse 
 FROM 
@@ -146,7 +145,19 @@ FROM
 GROUP BY 
 	warehouse;
 	
+
+--Get the inventory amount for each warehouse with VAT
+SELECT 
+	SUM(price_with_VAT), warehouse 
+FROM 
+	product_inventory
+WHERE 
+	is_product_in_stock
+GROUP BY 
+	warehouse;	
 	
+	
+
 --Get all product categories stored by each warehouse
 SELECT 
 	warehouse, 
