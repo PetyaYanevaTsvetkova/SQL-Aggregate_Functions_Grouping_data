@@ -7,7 +7,7 @@
 
 --Practical tasks:
 
-Create products_inventory table with PK which is autoincremented 
+//Create products_inventory table with PK which is autoincremented 
 and the following structure (all fields are mandatory):
 
 //Product name
