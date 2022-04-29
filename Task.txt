@@ -1,0 +1,68 @@
+--Theory:
+
+//Aggregate Functions: COUNT, AVG, SUM, MAX, MIN
+
+//Grouping data: GROUP BY, HAVING, GROUPING SETS
+
+
+--Practical tasks:
+
+Create products_inventory table with PK which is autoincremented 
+and the following structure (all fields are mandatory):
+
+//Product name
+
+//Available quantity
+
+//Product type алкохол/хранителни/напитки
+
+//Price without VAT
+
+//Price with VAT
+
+//Is product in stock
+
+//Warehouse (can be an id, name of city, etc - it doesnt matter)
+
+
+--Create scripts using aggregation functions and functions for grouping data:
+
+//Get the count of all available products in stock
+
+//--Get the count of all not available products in stock, grouped by product name
+
+//Get the average product price with VAT for all categories
+
+//Get the total amount of all available items in stock (use price with VAT and available qty.)
+
+//Find the most and least expensive item from the table
+
+//Find the most expensive item in each warehouse
+
+//Get the count of all products for each category
+
+//Get the count of all products for each category in and out of stock
+
+//Get the count of all products for each category where the products count is more than 3
+
+//Get the inventory amount for each warehouse
+
+//Get all product categories stored by each warehouse
+--Example:
+--Sofia_wh -> food
+--Sofia_wh -> drink
+--Plovdiv_wh -> wine
+--Plovdiv_wh -> fruits
+...
+
+
+//Get the avarage product categories hold by the warehouses 
+--Example: 
+--Sofia_wh -> 2 product categories
+--Plovdiv_wh -> 6 product categories
+--AVG: 2+6 products / 2 warehouses
+ 
+--Acceptance criteria:
+
+//As a QA Automation trainee, I want to gain knowledge of how to 
+use aggregate functions and count data.
